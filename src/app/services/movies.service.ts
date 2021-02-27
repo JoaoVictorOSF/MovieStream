@@ -8,11 +8,11 @@ export class MoviesService {
     url: string
     appKey: string
     imagePath: string
-    
 
     constructor(private http: HttpClient) {
         this.appKey = '03947557a96af28569c030f225638a21'
         this.url = 'https://api.themoviedb.org/3/movie/'
+        
         this.imagePath = 'http://image.tmdb.org/t/p/original'
 
     }
@@ -35,11 +35,6 @@ export class MoviesService {
     // ------------ | RISING MOVIE | --------------
     getRising(): Observable<any>{
         return this.http.get(`${this.url}top_rated?api_key=${this.appKey}&language=en-US&page=1`)
-    }
-
-    //get the certification of the movie (R, PG, PG-13 etc)
-    getRate(id: number): Observable<any>{
-        return this.http.get(`${this.url}${id}/release_dates?api_key=${this.appKey}`)
     }
 
     // ------------ | GET MAIN ACTORS & DIRECTOR | -------------- 

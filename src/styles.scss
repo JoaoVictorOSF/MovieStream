@@ -1,0 +1,12 @@
+@import 'app/scss/variables.scss';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: $backg;
+}

@@ -1,0 +1,13 @@
+<div class="movie-list">
+    <span class="gender">
+        {{title}}
+    </span>
+    <span class="divisors"></span>
+    <div class="movieRow">
+        <div class="movie" *ngFor="let movie of moviesList">
+            <app-movie-card
+                [imgCard]="movie.poster_path"
+            ></app-movie-card>
+        </div>
+    </div>
+</div>

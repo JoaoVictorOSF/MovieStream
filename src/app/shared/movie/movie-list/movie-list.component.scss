@@ -1,0 +1,33 @@
+@import '../../../scss/variables.scss';
+
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+}
+
+.gender{
+    font: $banshc;
+    color: $golden;
+}
+
+.divisors{
+    display: flex;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    
+    width: 250px;
+    height: 3px;
+    
+    background: transparent linear-gradient(90deg, #FFFFFF0D 0%, #80808099 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.movieRow{
+    display: flex;
+    overflow-x: auto;
+}
