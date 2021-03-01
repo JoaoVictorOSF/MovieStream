@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild  } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hide-menu',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HideMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor( private route: Router) { }
 
   ngOnInit(): void {
   }
-
+  goHome(){
+    this.route.navigate([`/`])
+  }
 }
