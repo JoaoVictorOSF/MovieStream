@@ -27,17 +27,17 @@ export class MoviesService {
         return this.http.get(`${this.url}${id}?api_key=${this.appKey}`)
     }
 
-    // ------------ | RELEASED MOVIE | --------------
-    getReleases(): Observable<any>{
+    // ------------ | NEW MOVIE | LANÇAMENTOS | --------------
+    getNewMovies(): Observable<any>{
         return this.http.get(`${this.url}popular?api_key=${this.appKey}&language=en-US&page=1`)
     }
 
-    // ------------ | RISING MOVIE | --------------
-    getRising(): Observable<any>{
+    // ------------ | TOP MOVIE | EM ALTA | --------------
+    getTopMovies(): Observable<any>{
         return this.http.get(`${this.url}top_rated?api_key=${this.appKey}&language=en-US&page=1`)
     }
 
-    // ------------ | GET MAIN ACTORS & DIRECTOR | -------------- 
+    // ------------ | GET CAST | -------------- 
     getCast(id: number): Observable<any>{
         return this.http.get(`${this.url}${id}/credits?api_key=${this.appKey}`)
     }
@@ -51,4 +51,6 @@ export class MoviesService {
     getMoviesByGenre(genreID: number): Observable<any>{
         return this.http.get(`https://api.themoviedb.org/3/discover/movie?api_key=${this.appKey}&with_genres=${genreID}`)
     }
+
+    
 }
