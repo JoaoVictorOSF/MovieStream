@@ -15,6 +15,8 @@ import { MovieListComponent } from './shared/movie/movie-list/movie-list.compone
 import { MovieGenderComponent } from './shared/movie/movie-gender/movie-gender.component';
 import { MovieStarComponent } from './shared/movie/movie-star/movie-star.component';
 import { DetailMovieComponent } from './pages/detail-movie/detail-movie.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { HideMenuComponent } from './shared/header/hide-menu/hide-menu.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { DetailMovieComponent } from './pages/detail-movie/detail-movie.componen
     MovieListComponent,
     MovieGenderComponent,
     MovieStarComponent,
-    DetailMovieComponent
+    DetailMovieComponent,
+    HeaderComponent,
+    HideMenuComponent
   ],
   imports: [
     BrowserModule,

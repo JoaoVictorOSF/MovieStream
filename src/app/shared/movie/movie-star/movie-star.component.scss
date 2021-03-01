@@ -1,13 +1,6 @@
 @import "../../../scss/variables.scss";
 
-.movie-star{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
-}
-
+// ---- Especificações da Página ----
 h1{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 40px;
@@ -23,20 +16,27 @@ h2{
     letter-spacing: 0px;
     text-shadow: -2px 2px 5px $backg;
 }
+// -----------------------------------
 
+
+.movie-star{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
 
 .barBlur{
     display: flex;
     position: absolute;
-    align-content: center;
     margin-top: 170px;
 
     width: 100%;
     height: 100px;
 
     background: transparent;
-    /* Note: currently only Safari supports backdrop-filter */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.09);
     filter: grayscale(1);
 
@@ -44,12 +44,9 @@ h2{
 
 .titleStar{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     position: absolute;    
     
-}
-
-img{
-    width: 100%;
+    padding: 5px 0px 5px 0px;
 }

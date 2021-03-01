@@ -1,0 +1,70 @@
+@import "../../scss/variables.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+    top: 0px;
+
+    width: 100%;
+    height: 5%;
+    
+
+    background-color: rgba(50,50,50,0.4);
+    backdrop-filter: blur(8px);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    .fas{
+        font-size: 30px;
+        color:white;
+        filter: drop-shadow(0px 0px 2px #000);
+    }
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    filter: drop-shadow(0px 0px 2px $backg);
+    span{
+        position: absolute;
+
+        font: $titulo-detail;
+        font-size: 40px;
+        text-decoration: underline;   
+    }
+    .glitch{
+        color: $laranja; 
+    }
+    .glitch1{
+        margin-left: -2px;
+        color: $redleft;
+    }
+    .glitch2{
+        margin-left: 2px;
+        color: $blueright;
+    }
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    .fas{
+        font-size: 30px;
+        color:white;
+        filter: drop-shadow(0px 0px 2px #000);
+    }
+}

@@ -3,10 +3,15 @@
 *{
     padding: 0px;
     margin: 0px;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 body{
     background-color: $backg;
+    padding-bottom: 30px;
+    padding-top: 10%;
+}
+
+img{
+    width: 100%;
 }
