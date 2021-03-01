@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="menu" onclick="showMenu()"><i class="fas fa-bars"></i></div>
+    <div class="menu" (click)="onToggle($event)"><i class="fas fa-bars"></i></div>
     <div class="logo" (click)="goHome()">
         <span class="glitch1">MS</span>
         <span class="glitch2">MS</span>
@@ -8,13 +8,21 @@
     <div class="search"><i class="fas fa-search"></i></div>
 </div>
 
-<div id="hideMenu">
-    <app-hide-menu></app-hide-menu>
+<div class="hide" [@toggle]="animationState">
+    <section class="user">
+        <div class="photoUser">
+            <img src="../../../../assets/kaio_lindo.png">
+        </div>
+        <div class="idUser">
+            <h2>Kaio Espindola</h2>
+            <h3>#2210</h3>
+        </div>
+    </section>
+    <section class="menuHiden">
+        <span (click)="goHome()">home</span>
+        <span (click)="goHome()">favorite</span>
+    </section>
+    <section class="configurations">
+        <button class="logout">LOGOUT</button>
+    </section>
 </div>
-
-<script>
-    function showMenu() {
-       var element = document.getElementsByClassName("hideMenu");
-       element.classList.toggle("showMenu");
-    }
-</script>
