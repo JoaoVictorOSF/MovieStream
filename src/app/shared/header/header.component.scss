@@ -106,6 +106,17 @@
     }
 }
 
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: $backg;
+    border-bottom: 1px solid $laranja;
+    filter: drop-shadow(-1px 1px 1px $laranja);
+
+}
+
 .idUser{
     flex-direction: column;
     justify-content: center;
@@ -122,7 +133,7 @@
 }
 
 .menuHiden{
-    
+    padding-top: 50px;
     flex-direction: column;
     justify-content: center;
     width: 100%;

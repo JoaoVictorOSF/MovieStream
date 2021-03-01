@@ -41,15 +41,23 @@ h2{
     width: 90%;
 }
 
+.heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    background-color: rgba(50, 50, 50, 0.397);
+    backdrop-filter: blur(4px);
+    input{
+        display: none;
+    }
+}
+
 .heart-favorite{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 10%;
-    background-color: rgba(50, 50, 50, 0.397);
-    backdrop-filter: blur(4px);
-    
+    position: absolute;
 }
 
 .movie-title{

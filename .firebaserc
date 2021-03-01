@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "moviestreamacademy": {
+      "hosting": {
+        "movie-stream-app": [
+          "moviestreamacademy"
+        ]
+      }
+    }
+  }
+}
