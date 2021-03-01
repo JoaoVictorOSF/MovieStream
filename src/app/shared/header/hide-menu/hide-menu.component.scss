@@ -1,0 +1,92 @@
+@import "../../../scss/variables.scss";
+
+
+.hide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 70%;
+    height: 844px;
+    background-color: #011b381a;
+    backdrop-filter: blur(10px);
+    top:5%;
+    section div, span{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+}
+
+.photoUser{
+    justify-content: center;
+    align-content: center;
+
+    padding: 10px 0px 10px;
+    img{
+        width: 50%;
+        border-radius: 50%;
+        filter: drop-shadow(0px 0px 2px $laranja);
+    }
+}
+
+.idUser{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font: $banshc;
+        color: $laranja;
+    }
+    h3{
+        margin-top: -3%;
+        font: $banshc;
+        color: white;
+    }
+}
+
+.menu{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    span{
+        align-items: center;
+        justify-content: center;
+        
+        height: 63px;
+        margin: 15px 0px 15px 0px;
+
+        font: $banshc;
+        text-align: center;
+        color: white;
+
+        background-color: $laranja;
+
+    }
+}
+
+.configurations{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    
+    .logout {
+        
+        align-items: center;
+        justify-content: center;
+        width: 138px;
+        height: 63px;
+        background: #f4442e;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        font: $banshcB;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+
+        cursor: pointer;
+    }
+}

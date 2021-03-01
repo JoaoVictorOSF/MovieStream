@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="menu"><i class="fas fa-bars"></i></div>
+    <div class="menu" onclick="showMenu()"><i class="fas fa-bars"></i></div>
     <div class="logo" (click)="goHome()">
         <span class="glitch1">MS</span>
         <span class="glitch2">MS</span>
@@ -7,3 +7,14 @@
     </div>
     <div class="search"><i class="fas fa-search"></i></div>
 </div>
+
+<div id="hideMenu">
+    <app-hide-menu></app-hide-menu>
+</div>
+
+<script>
+    function showMenu() {
+       var element = document.getElementsByClassName("hideMenu");
+       element.classList.toggle("showMenu");
+    }
+</script>
