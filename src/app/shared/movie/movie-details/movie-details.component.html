@@ -8,7 +8,11 @@
             <h3>{{director}}</h3>
             <h3>{{movie.runtime}}min</h3>
         </div>
-        <span class="heart-favorite"> </span>
+        <label class="heart">
+            <input type="checkbox">
+            <span class="heart-favorite"><i class="fas fa-heart"></i> </span>
+        </label>
+        
 
         <!-- ------ | TITULO | ------- -->
         <div class="movie-title">
@@ -22,7 +26,10 @@
     </div>
     
     <div class="movie-detail">
-        {{movie.overview}}
+        <h4>Resume</h4>
+        <p>
+            {{movie.overview}}
+        </p>
     </div>
     <h2>Relacionated Movies</h2>
 </div>
