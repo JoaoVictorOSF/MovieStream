@@ -1,13 +1,12 @@
 .movie-card{
     display: flex;
 
-    background-image: url(../../../../assets/hobbit.jpg);
-    background-size: cover;
+    background-color: white;
     
     width: 134px;
     height: 200px;
 
-    margin-left: 20px;
+    margin: 0px 10px 0px 10px;
 }
 
 img{

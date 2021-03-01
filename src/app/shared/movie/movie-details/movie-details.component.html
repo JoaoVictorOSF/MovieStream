@@ -1,0 +1,28 @@
+<div class="movie" *ngIf="movie">
+    <img src="{{imgOriginPath+movie.poster_path}}" alt="">
+
+    <!-- ----- Informações sobre o filme ----- -->
+    <div class="movie-features">
+        <div class="movie-informations">
+            <h3>{{movie.release_date}}</h3>
+            <h3>{{director}}</h3>
+            <h3>{{movie.runtime}}min</h3>
+        </div>
+        <span class="heart-favorite"> </span>
+
+        <!-- ------ | TITULO | ------- -->
+        <div class="movie-title">
+            {{movie.title}}
+        </div>
+        
+        <!-- ------ | GENERO | ------ -->
+        <div class="movie-genre">
+            <h3 *ngFor="let genre of movie.genres">{{genre.name}}</h3>
+        </div>
+    </div>
+    
+    <div class="movie-detail">
+        {{movie.overview}}
+    </div>
+    <h2>Relacionated Movies</h2>
+</div>

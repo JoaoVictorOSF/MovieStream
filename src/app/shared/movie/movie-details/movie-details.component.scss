@@ -1,0 +1,66 @@
+@import "../../../scss/variables.scss";
+
+img{
+    width: 100%;
+}
+
+h3{
+    font: $banshc;
+    font-size: 15px;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+h2{
+    text-align: center;
+    font: $banshc;
+    color: $redleft;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+
+.movie-features{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -200px;
+}
+
+// Contem todo o conteudo amostral para o MOVIE
+.movie{
+
+}
+
+.movie-informations{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    width: 90%;
+}
+
+.heart-favorite{
+    width: 10%;
+    background-color: rgba(50,50,50,0.4);
+    backdrop-filter: blur(5px);
+}
+
+.movie-title{
+    width: 100%;
+    padding-left: 10px;
+
+    font: $titulo-detail;
+    color:white;
+    backdrop-filter: blur(10px);
+}
+
+.movie-genre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: rgba(50,50,50,0.4);
+    backdrop-filter: blur(10px);
+}
+

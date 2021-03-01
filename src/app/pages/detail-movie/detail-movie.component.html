@@ -1,0 +1,13 @@
+<app-movie-details
+    [movie]="movie"
+    [cast]="cast"
+    [director]="director"
+></app-movie-details>
+
+
+
+<app-movie-list *ngFor="let genre of movieGenres; index as i"
+    [title]="genre.name"
+    [moviesList]="moviesRelacionated[i]"
+>
+</app-movie-list>

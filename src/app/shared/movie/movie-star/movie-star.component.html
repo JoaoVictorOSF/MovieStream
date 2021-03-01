@@ -1,0 +1,9 @@
+<div class="movie-star" *ngIf="movieTop">
+    <div class="barBlur">
+        <div class="titleStar">
+            <h1>{{movieTop.title}}</h1>
+            <h2>Release: {{movieTop.release_date}}</h2>
+        </div>
+    </div>
+    <img src="{{imgOriginPath+movieTop.backdrop_path}}" alt="">
+</div>

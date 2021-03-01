@@ -1,0 +1,9 @@
+
+<div *ngFor="let genre of genres; index as i ">
+    
+        <app-movie-list
+            [title] = "genre.name"
+            [moviesList] = "moviesListGenre[i]"
+            
+        ></app-movie-list>
+</div>

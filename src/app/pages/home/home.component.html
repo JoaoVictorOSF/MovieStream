@@ -1,11 +1,23 @@
-<app-movie-list
+<app-movie-star
+    [movieTop]="topMovies[10]"
+></app-movie-star>
+
+
+<!-- Lista de filmes LANÇAMENTOS -->
+<app-movie-list class="movieListTeste"
     [title]="'Lançamento'"
     [moviesList]="newMovies"
 >
 </app-movie-list>
 
+
+<!-- Lista de filmes EM ALTA -->
 <app-movie-list
     [title]="'Em Alta'"
     [moviesList]="topMovies"
 >
 </app-movie-list>
+
+
+<!-- Listas de filmes por GENERO -->
+<app-movie-gender></app-movie-gender>
